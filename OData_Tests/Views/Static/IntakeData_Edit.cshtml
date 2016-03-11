@@ -1,0 +1,98 @@
+﻿@{
+    Layout = null;
+}
+    <h2>IntakeData</h2>
+    <form name="theForm">
+        <div class="form-horizontal">
+            <ul id="validationSummary"></ul>
+            <div class="form-group">
+                <label for="ProjectName" class = "control-label col-md-2"> ProjectName </label>
+                <div class="col-md-10">
+                    <input type="text" ng-model="data.ProjectName" id="ProjectName"  class="form-control"/>
+                    <div id="validation_for_ProjectName"></div>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="AssignedTo" class = "control-label col-md-2"> AssignedTo </label>
+                <div class="col-md-10">
+                    <input type="text" ng-model="data.AssignedTo" id="AssignedTo"  class="form-control"/>
+                    <div id="validation_for_AssignedTo"></div>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="AssignedBy" class = "control-label col-md-2"> AssignedBy </label>
+                <div class="col-md-10">
+                    <input type="text" ng-model="data.AssignedBy" id="AssignedBy"  class="form-control"/>
+                    <div id="validation_for_AssignedBy"></div>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="Stackholder" class = "control-label col-md-2"> Stackholder </label>
+                <div class="col-md-10">
+                    <input type="text" ng-model="data.Stackholder" id="Stackholder"  class="form-control"/>
+                    <div id="validation_for_Stackholder"></div>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="DeploymentType" class = "control-label col-md-2"> DeploymentType </label>
+                <div class="col-md-10">
+                    <input type="text" ng-model="data.DeploymentType" id="DeploymentType"  class="form-control"/>
+                    <div id="validation_for_DeploymentType"></div>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="Description" class = "control-label col-md-2"> Description </label>
+                <div class="col-md-10">
+                    <input type="text" ng-model="data.Description" id="Description"  class="form-control"/>
+                    <div id="validation_for_Description"></div>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="BeginDate" class = "control-label col-md-2"> BeginDate </label>
+                <div class="col-md-10">
+                    <input type="text" ng-model="data.BeginDate" id="BeginDate"  class="form-control"/>
+                    <div id="validation_for_BeginDate"></div>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="LastModified" class = "control-label col-md-2"> LastModified </label>
+                <div class="col-md-10">
+                    <input type="text" ng-model="data.LastModified" id="LastModified"  class="form-control"/>
+                    <div id="validation_for_LastModified"></div>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="CompleteDate" class = "control-label col-md-2"> CompleteDate </label>
+                <div class="col-md-10">
+                    <input type="text" ng-model="data.CompleteDate" id="CompleteDate"  class="form-control"/>
+                    <div id="validation_for_CompleteDate"></div>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="IntakePayload" class = "control-label col-md-2"> IntakePayload </label>
+                <div class="col-md-10">
+                    <input type="text" ng-model="data.IntakePayload" id="IntakePayload"  class="form-control"/>
+                    <div id="validation_for_IntakePayload"></div>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="button" value="Save" class="btn btn-default" ng-click="save()" />
+                </div>
+            </div>
+        </div>
+    </form>
+    
+    <div>
+        <a href="#/IntakeData">Back to List</a>
+    </div>

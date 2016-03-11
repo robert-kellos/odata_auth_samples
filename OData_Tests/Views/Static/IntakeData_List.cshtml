@@ -1,0 +1,84 @@
+﻿    @{
+        Layout = null;
+    }
+    <h2>IntakeData</h2>
+    <p>
+        <a href="#/IntakeData/Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>
+                ProjectName
+            </th>
+            <th>
+                AssignedTo
+            </th>
+            <th>
+                AssignedBy
+            </th>
+            <th>
+                Stackholder
+            </th>
+            <th>
+                DeploymentType
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                BeginDate
+            </th>
+            <th>
+                LastModified
+            </th>
+            <th>
+                CompleteDate
+            </th>
+            <th>
+                IntakePayload
+            </th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in data">
+            <td>
+                {{ item.ProjectName }}
+            </td>
+            <td>
+                {{ item.AssignedTo }}
+            </td>
+            <td>
+                {{ item.AssignedBy }}
+            </td>
+            <td>
+                {{ item.Stackholder }}
+            </td>
+            <td>
+                {{ item.DeploymentType }}
+            </td>
+            <td>
+                {{ item.Description }}
+            </td>
+            <td>
+                {{ item.BeginDate }}
+            </td>
+            <td>
+                {{ item.LastModified }}
+            </td>
+            <td>
+                {{ item.CompleteDate }}
+            </td>
+            <td>
+                {{ item.IntakePayload }}
+            </td>
+            <td>
+                <a ng-href="#/IntakeData/Edit/{{item.WorkId}}">Edit</a> |
+                <a ng-href="#/IntakeData/{{item.WorkId}}">Details</a> |
+                <a ng-href="#/IntakeData/Delete/{{item.WorkId}}">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    
+    </table>
